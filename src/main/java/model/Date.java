@@ -1,7 +1,5 @@
 package model;
 
-import java.time.LocalDate;
-
 public final class Date {
 
   private final int MINIMUM_YEAR = 1900;
@@ -32,7 +30,7 @@ public final class Date {
       this.day = p2;
       this.year = p1;
     }
-    if (!isValidDayToMonth()) throw new IllegalArgumentException("Invalid date: leapyear and day of month check");
+    if (!isValidDayToMonth()) throw new IllegalArgumentException("Invalid date: leapyear or day of month check");
   }
 
   private boolean isValidEntry(int p) {
