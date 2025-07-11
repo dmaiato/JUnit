@@ -24,8 +24,6 @@ public final class Date {
     if (!isValidMonth(month))
       throw new IllegalArgumentException("Invalid date: month check");
 
-      LocalDate.now().plusDays(300);
-
     this.month = month;
     if (unitParse(p1) == 'D') {
       this.day = p1;
